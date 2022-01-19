@@ -53,11 +53,13 @@ else if (input === "scissors") {
 function winner() {
     if (playerScore > computerScore) {
     return "Player wins."; 
-} else  { 
+} else if (playerScore < computerScore) { 
     return "Computer wins.";
+} else if (playerScore === computerScore) {
+    return "It's a draw!";
 }
 }
-    
+    //make a tie game message
 function game() {
     console.log(playRound() + " First round complete.");
     console.log(playRound() + " Second round complete.");
@@ -68,6 +70,3 @@ function game() {
 }
 
 game();
-
-
-
