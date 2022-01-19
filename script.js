@@ -51,9 +51,9 @@ else if (input === "scissors") {
 }
 
 function winner() {
-    if (playerScore >= 3) {
+    if (playerScore > computerScore) {
     return "Player wins."; 
-} else  { (computerScore >= 3) 
+} else  { 
     return "Computer wins.";
 }
 }
