@@ -4,13 +4,13 @@ let draws = 0;
 function computerPlay () {
     let randomNumber = Math.floor(Math.random() * 3); 
     if (randomNumber === 0) {
-        return "Rock";
+        return "rock";
     }
     else if (randomNumber === 1) {
-        return "Paper";
+        return "paper";
     }
     else if (randomNumber === 2) {
-        return "Scissors";
+        return "scissors";
     }
 }
 
@@ -22,7 +22,7 @@ if (input === computerSelection) {
     return "It's a tie."; 
 } 
 else if (input === "rock") {
-    if (computerSelection === "Scissors") {
+    if (computerSelection === "scissors") {
         playerScore +=1;
         return "You win ! Rock beats scissors. Player has " + playerScore + " point(s).";
         } else {
@@ -31,7 +31,7 @@ else if (input === "rock") {
         }
     } 
 else if (input === "paper") {
-    if (computerSelection === "Rock") {
+    if (computerSelection === "rock") {
         playerScore +=1;
         return "You win! Paper beats rock. Player has " + playerScore + " point(s).";
         } else {
@@ -40,7 +40,7 @@ else if (input === "paper") {
         }
     } 
 else if (input === "scissors") {
-    if (computerSelection === "Paper") {
+    if (computerSelection === "paper") {
         playerScore +=1;
         return "You win! Scissors beats paper. Player has " + playerScore + " point(s).";
         } else {
