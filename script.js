@@ -23,7 +23,7 @@ if (input === computerSelection) {
 else if (input === "rock") {
     if (computerSelection === "scissors") {
         playerScore +=1;
-        return "You win ! Rock beats scissors.";
+        return "You win! Rock beats scissors.";
         } else {
         computerScore +=1;
         return "You lose. Paper beats rock.";
@@ -71,11 +71,11 @@ while (isValid==false){
 
 function winner() {
     if (playerScore > computerScore) {
-    return "Player wins."; 
+    return "The all-knowing computer has been defeated. The Player has won. Humanity rejoices!"; 
 } else if (playerScore < computerScore) { 
-    return "Computer wins."; 
+    return "Player has been defeated. The robots have taken over..."; 
 } else if (playerScore === computerScore) {
-    return "It's a draw!";
+    return "It's a draw! Hmm... what're the odds?";
 }
 }
 
